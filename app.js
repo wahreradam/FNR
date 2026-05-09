@@ -1,13 +1,13 @@
-const PASSWORD = "Figger Noid";
+const PASSWORD = "123";
 
 const users = [
-  { name: "Max", img: "https://via.placeholder.com/300", bio: "Cooler Typ" },
-  { name: "Leon", img: "https://via.placeholder.com/300", bio: "Sportlich" },
-  { name: "#3 Julius", img: "JuliusRanking.jpeg", bio: "heightmaxxed, hltn, gymskipper, primal" },
-  { name: "#4 Naveen", img: "NaveenRanking.jpeg", bio: "currymaxxed, manlet, gymmaxxer" },
-  { name: "Paul", img: "https://via.placeholder.com/300", bio: "Smart" },
-  { name: "Lukas", img: "https://via.placeholder.com/300", bio: "Chill" },
-  { name: "Finn", img: "https://via.placeholder.com/300", bio: "Energie" },
+  { name: "#1-#2 Ture", img: "https://via.placeholder.com/300", bio: "gymcel, primal, mtn" },
+  { name: "#1-#2 Nick", "https://via.placeholder.com/300", bio: "mtn, akkutanmaxxed" },
+  { name: "#3 Julius", img: "JuliusRanking.jpeg", bio: "heightmaxxed, hltn, gymskipper, trueprimal, blackpilled, orgmaxxed" },
+  { name: "#4 Naveen", img: "NaveenRanking.jpeg", bio: "currymaxxed, manlet, gymmaxxer, bluepilled" },
+  { name: "#5-#6 Johann", img: "https://via.placeholder.com/300", bio: "blackpilled, orgmaxxed, akkutanmaxxed" },
+  { name: "#5-#6 Joshua", img: "https://via.placeholder.com/300", bio: "bluepilled, lowcortisol" },
+
 ];
 
 function checkPassword() {
