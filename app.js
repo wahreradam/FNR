@@ -1,4 +1,4 @@
-const PASSWORD = "123";
+const PASSWORD = "12";
 
 const users = [
   { name: "#1 Ture", img: "TureRankings.jpeg", bio: "gymcel, primal, mtn" },
