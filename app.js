@@ -3,7 +3,7 @@ const PASSWORD = "123";
 const users = [
   { name: "#1-#2 Ture", img: "TureRankings.jpeg", bio: "gymcel, primal, mtn" },
   { name: "#1-#2 Nick", img: "NickRankings.jpeg", bio: "mtn, akkutanmaxxed" },
-  { name: "#3 Julius", img: "JuliusRanking.jpeg", bio: "heightmaxxed, hltn, gymskipper, trueprimal, blackpilled, orgmaxxed, highcortisol" },
+  { name: "#3 Julius", img: "Julius2Ranking.jpeg", bio: "heightmaxxed, hltn, gymskipper, trueprimal, blackpilled, orgmaxxed, highcortisol" },
   { name: "#4 Naveen", img: "NaveenRanking.jpeg", bio: "currymaxxed, manlet, gymmaxxer, bluepilled" },
   { name: "#5-#6 Johann", img: "JohannRankings.jpeg", bio: "blackpilled, orgmaxxed, akkutanmaxxed" },
   { name: "#5-#6 Joshua", img: "https://via.placeholder.com/300", bio: "bluepilled, lowcortisol" },
