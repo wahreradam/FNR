@@ -9,23 +9,31 @@
 
 <h1>Figger Noid Chad Rankings</h1>
 
+<!-- LOGIN -->
 <div id="login">
   <input type="password" id="pw" placeholder="Passwort">
   <button onclick="checkPassword()">Enter</button>
 </div>
 
+<!-- APP -->
 <div id="app" style="display:none;">
-  <div id="profiles"></div>
 
-  <!-- KOMMENTARE -->
-  <div id="commentsSection">
-    <h2>Kommentare</h2>
+  <div id="main">
 
-    <input id="commentName" placeholder="Dein Name">
-    <input id="commentText" placeholder="Kommentar">
-    <button onclick="addComment()">Posten</button>
+    <!-- PROFILES -->
+    <div id="profiles"></div>
 
-    <div id="comments"></div>
+    <!-- COMMENTS -->
+    <div id="commentsSection">
+      <h2>Kommentare</h2>
+
+      <input id="commentName" placeholder="Dein Name">
+      <input id="commentText" placeholder="Kommentar">
+      <button onclick="addComment()">Posten</button>
+
+      <div id="comments"></div>
+    </div>
+
   </div>
 
 </div>
