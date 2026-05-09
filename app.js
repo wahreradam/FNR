@@ -41,13 +41,15 @@ function render() {
     const div = document.createElement("div");
     div.className = "profile";
 
+    const myVote = votes[u.name] || 0;
+
     div.innerHTML = `
       <img src="${u.img}">
       <h2>${u.name}</h2>
 
       <div>
-        <button onclick="vote('${u.name}', 1)">👍</button>
-        <button onclick="vote('${u.name}', -1)">👎</button>
+        <button style="color:${myVote === 1 ? 'green' : ''}" onclick="vote('${u.name}', 1)">👍</button>
+        <button style="color:${myVote === -1 ? 'red' : ''}" onclick="vote('${u.name}', -1)">👎</button>
       </div>
 
       <p>Score: ${u.score}</p>
@@ -58,19 +60,24 @@ function render() {
   });
 }
 
-// VOTING SYSTEM
+// VOTING SYSTEM (EDITIERBAR)
 function vote(name, value) {
-  if (votes[name]) {
-    alert("Du hast hier schon gevotet!");
-    return;
+  const user = users.find(u => u.name === name);
+
+  const oldVote = votes[name] || 0;
+
+  // alten Vote entfernen
+  user.score -= oldVote;
+
+  // wenn gleicher Vote nochmal → reset
+  if (oldVote === value) {
+    votes[name] = 0;
+  } else {
+    votes[name] = value;
+    user.score += value;
   }
 
-  const user = users.find(u => u.name === name);
-  user.score += value;
-
-  votes[name] = true;
-
-  // SPEICHERN
+  // speichern
   localStorage.setItem("users", JSON.stringify(users));
   localStorage.setItem("votes", JSON.stringify(votes));
 
